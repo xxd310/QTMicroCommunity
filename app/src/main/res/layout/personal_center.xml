@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/rl_title_bar_personal_center"
+            android:background="@color/title_bar_bg"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fitsSystemWindows="true"
+            android:clipToPadding="true"
+            android:layout_weight="10">
+
+<!--        <ImageView
+                android:id="@+id/iv_back_personal_center"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"/>-->
+
+        <TextView
+                android:text="@string/personal_center"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"/>
+
+       <!-- <TextView
+                android:id="@+id/tv_exit_personal_center"
+                android:text="@string/exit"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"/>-->
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="80">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:background="#415AAE"
+                    android:gravity="center">
+                <com.zhihuitech.qtwsq.util.XCRoundImageView
+                        android:id="@+id/iv_portrait_personal_center"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        />
+                <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/tv_realname_personal_center"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/tv_address_personal_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:lines="2"/>
+
+                <TextView
+                        android:id="@+id/tv_not_authenticate_personal_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="未认证，请先认证(若已提交认证，请稍后片刻)"
+                        android:layout_marginBottom="5dp"/>
+                <TextView
+                        android:id="@+id/tv_go_to_authenticate_personal_center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="现在去认证"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:clickable="true"
+                        android:background="@drawable/go_to_authenticate_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"  android:id="@+id/ll_my_information_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                               android:src="@drawable/my_information"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_information"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_9" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:id="@+id/ll_my_house_property_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                               android:src="@drawable/my_house_property"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_house_property"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_9" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"  android:id="@+id/ll_wallet_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/wallet"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_9" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"  android:id="@+id/ll_score_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/score"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_9" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"  android:id="@+id/ll_pay_record_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/pay_record"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_record"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_9" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"  android:id="@+id/ll_shopping_list_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                               android:src="@drawable/shopping_list"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_list"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_9" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"  android:id="@+id/ll_suggestion_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/suggestion"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggestion"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_9" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"  android:id="@+id/ll_setting_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/setting"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/gray_9" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"  android:id="@+id/ll_contact_us_personal_center"
+                              android:gravity="center_vertical"
+                              android:padding="10dp"
+                              android:clickable="true"
+                              android:background="@drawable/button_bg04">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/contact_us"
+                               android:layout_marginRight="10dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_us"
+                              android:textSize="16sp" android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

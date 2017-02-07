@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="title_bar_bg">#415AAE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orange">#EB6718</color>
+    <color name="btn_bg">#778FE5</color>
+    <color name="code_text">#2875DE</color>
+    <color name="default_address_text">#ECA520</color>
+    <color name="repair_text">#59B5E5</color>
+    <color name="bottom_menu_text_color">#4444C1</color>
+    <color name="forget_password_text_color">#5171E5</color>
+    <color name="gray_9">#999999</color>
+    <color name="gray_e">#eeeeee</color>
+    <color name="user_name_text">#50E4E6</color>
+</resources>

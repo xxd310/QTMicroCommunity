@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name">青藤微社区</string>
+    <string name="action_settings">设置</string>
+
+    <!-- 公共 -->
+    <string name="back">返回</string>
+    <string name="exit">退出</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="tip">提示</string>
+    <string name="validating_information">正在验证信息，请稍后&#8230;</string>
+    <string name="submitting_information">正在提交信息，请稍后&#8230;</string>
+    <string name="obtaining_information">正在获取信息，请稍后&#8230;</string>
+    <string name="press_again_to_exit_program">再按一次退出程序</string>
+
+    <!-- 登录界面 -->
+    <string name="username">用户名/手机号</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="auto_login">自动登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="null_tel_tip">手机号不能为空！</string>
+    <!-- 注册界面 -->
+    <string name="user_register">用户注册</string>
+    <string name="input_username">请输入您真实姓名</string>
+    <string name="set_password">设置密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="input_phone_number">请输入手机号码</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="retrieve_code">获取验证码</string>
+    <string name="cannot_retrieve_code">收不到验证码？</string>
+    <string name="retrieve_again">秒后重新获取</string>
+    <string name="wrong_format_of_tel">手机号格式不正确！</string>
+    <string name="different_password">两次输入的密码不一致！</string>
+    <string name="uncompleted_information">信息不完整！</string>
+    <string name="no_tel_code_tip">手机号和验证码都不能为空！</string>
+    <!-- 重置密码界面 -->
+    <string name="new_password">新密码</string>
+    <string name="password_tip">请输入新密码，至少6个字符</string>
+    <string name="input_password_again">请再次输入密码</string>
+    <string name="null_password_tip">密码不能为空！</string>
+    <string name="wrong_password_length_tip">密码长度不符合要求！</string>
+    <!-- 主界面 -->
+    <string name="home_page">首页</string>
+    <string name="fresh_news">新鲜事</string>
+    <string name="service">服务</string>
+    <string name="personal_center">个人中心</string>
+    <!-- 首页 -->
+    <string name="micro_fruit">微果汇</string>
+    <string name="need_repair">我要报修</string>
+    <string name="car_management">车辆管理</string>
+    <string name="online_payment">在线缴费</string>
+    <string name="life_service">生活服务</string>
+    <string name="notice">公告</string>
+    <string name="query_express">查快递</string>
+    <string name="contact_property">联系物业</string>
+    <!-- 报修对话框 -->
+    <string name="family_repair">家庭报修</string>
+    <string name="common_repair">公共报修</string>
+    <string name="cannot_choose">不会选择？</string>
+    <string name="query_my_repair_record">查看我的报修记录</string>
+    <!-- 车辆管理界面 -->
+    <string name="add_new_car">添加新车</string>
+    <string name="no_added_car_tip1">您暂时还没有添加的车辆</string>
+    <string name="no_added_car_tip2">添加车辆后体验神奇的功能哦</string>
+    <string name="unknown_brand">品牌：未知</string>
+    <string name="unknown_plate_no">车牌号：未知</string>
+    <string name="reviewing">正在审核中</string>
+    <string name="recharge_for_car">为该车充值&gt;</string>
+    <string name="query_record_of_car">查看该车记录&gt;</string>
+    <!-- 添加车辆界面 -->
+    <string name="add_car">添加车辆</string>
+    <string name="brand">品牌</string>
+    <string name="choose_your_car_brand">选择您的爱车品牌</string>
+    <string name="plate_number">车牌号</string>
+    <string name="input_your_plate_number">请输入您的车牌号</string>
+    <string name="confirm_your_information">请确认您的户主信息</string>
+    <string name="owner_name">户主名：</string>
+    <string name="address">住址：</string>
+    <string name="contact_information">联系方式：</string>
+    <string name="add_pic_of_driving_license_for_car">请添加该车行驶证照片</string>
+    <string name="add_positive_of_car">添加该车行驶正面</string>
+    <string name="add_guide">添加指南</string>
+    <string name="confirm_add">确认添加</string>
+    <string name="please_choose_your_car_brand">请选择您的爱车品牌！</string>
+    <string name="wrong_format_of_plate_number">车牌号格式不正确！</string>
+    <string name="choose_pic">选择照片</string>
+    <string name="choose_from_system">从系统中获取</string>
+    <string name="take_photo">拍照</string>
+    <!-- 添加说明对话框 -->
+    <string name="add_description">添加说明</string>
+    <string name="description">为了不耽误您的宝贵时间，用户在添加行驶证图片时，必须要保证图片足够清晰以至于审核过程中能清楚看到图片上每一个文字。该行驶证我们只做审核使用，不会泄露您的隐私信息，请您放心。</string>
+    <!-- 选择汽车品牌界面 -->
+    <string name="choose_car_brand">选择汽车品牌</string>
+    <!-- 在线缴费界面 -->
+    <string name="payment_center">缴费中心</string>
+    <string name="property_cost_payment">物业费缴费</string>
+    <string name="parking_space_payment">车位缴纳</string>
+    <string name="self_payment">自助缴费</string>
+    <string name="my_payment_record">我的缴费记录</string>
+    <!-- 缴纳物业费界面 -->
+    <string name="pay_property_cost">缴纳物业费</string>
+    <string name="property_cost_service_line">物业费服务线</string>
+    <string name="total_property_cost">物业费费用总计</string>
+    <string name="invoice_title">发票抬头</string>
+    <string name="pay_property_cost_tip">请在物业费到期前一个月内缴纳</string>
+    <!-- 业主认证界面 -->
+    <string name="owner_authentication">业主认证</string>
+    <string name="scan_first">先去逛逛</string>
+    <!-- 用户认证界面 -->
+    <string name="user_authentication">用户认证</string>
+    <string name="for_better_service">为了更好地为您服务，</string>
+    <string name="suggest_user_authentication">建议您立即进行业主认证！</string>
+    <!-- 通知公告界面 -->
+    <string name="notification_announcement">通知公告</string>
+    <string name="activity_page">活动页面</string>
+    <!-- 个人中心界面 -->
+    <string name="my_information">我的资料</string>
+    <string name="my_house_property">我的房产</string>
+    <string name="wallet">钱包</string>
+    <string name="score">积分</string>
+    <string name="pay_record">缴费记录</string>
+    <string name="shopping_list">购物清单</string>
+    <string name="suggestion">意见建议</string>
+    <string name="setting">设置</string>
+    <string name="contact_us">联系我们</string>
+    <!-- 我的房产界面 -->
+    <string name="new_added">新增</string>
+    <string name="default_address">默认地址</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="set_default_address">设置为默认地址？</string>
+    <string name="delete_house_property">确认删除该房产？</string>
+    <!-- 新增房产界面 -->
+    <string name="add_house_property">新增房产</string>
+    <string name="choose_community">选择小区</string>
+    <string name="choose_region">选择区域</string>
+    <string name="choose_building_number">选择楼号</string>
+    <string name="choose_unit">选择单元</string>
+    <string name="choose_room_number">选择房间号</string>
+    <string name="choose_user_type">选择用户类型</string>
+    <string name="no_community_to_choose">暂无可选小区！</string>
+    <string name="no_region_to_choose">暂无可选区域！</string>
+    <string name="no_building_to_choose">暂无可选楼号！</string>
+    <string name="no_unit_to_choose">暂无可选单元！</string>
+    <string name="no_room_to_choose">暂无可选房间号！</string>
+    <string name="please_choose_community">请选择小区！</string>
+    <string name="please_choose_region">请选择区域！</string>
+    <string name="please_choose_building">请选择楼号！</string>
+    <string name="please_choose_unit">请选择单元！</string>
+    <string name="please_choose_room">请选择房间号！</string>
+    <string name="please_choose_user_type">请选择用户类型！</string>
+    <string name="no_community">无小区名</string>
+    <string name="no_region">无区域名</string>
+    <string name="no_building">无幢名</string>
+    <string name="no_unit">无单元名</string>
+    <string name="no_room">无房间名</string>
+    <!-- 报修界面 -->
+    <string name="common_repair_tip">感谢您参与社区的管理，公共报修无特殊情况无需付款</string>
+    <string name="please_choose_your_repair_project">请选择您的维修项目</string>
+    <string name="please_choose_your_repair_project_type">请选择您的维修项目类型</string>
+    <string name="please_choose_your_repair_project_detail">请选择您的维修项目详情</string>
+    <string name="detail_description">详细说明</string>
+    <string name="community_address">小区地址</string>
+    <string name="please_choose_address">请选择地址</string>
+    <string name="please_choose_date">请选择日期</string>
+    <string name="book_come_time">预约上门时间</string>
+    <string name="detail_address">详细地址</string>
+    <string name="add_live_pic">添加现场图片</string>
+    <string name="no_repair_project_type_to_choose">暂无可选的维修项目类型！</string>
+    <string name="no_repair_project_detail_to_choose">暂无可选的维修项目详情！</string>
+    <string name="please_input_detail_description">请输入详细说明！</string>
+    <string name="please_input_detail_address">请输入详细地址！</string>
+    <string name="morning">上午</string>
+    <string name="afternoon">下午</string>
+    <string name="repair_record">报修记录</string>
+    <!-- 联系我们界面 -->
+    <string name="contact_us_business_cooperation">联系我们&amp;商务合作</string>
+    <string name="telphone">电  话:</string>
+    <string name="email">邮  箱:</string>
+    <string name="weixin">微 信:</string>
+    <string name="qq">QQ号:</string>
+</resources>

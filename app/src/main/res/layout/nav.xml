@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="主界面"
+                android:id="@+id/btn_to_main"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="业主认证"
+                android:id="@+id/btn_to_owner_authentication"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="登录"
+                android:id="@+id/btn_to_login"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="在线缴费"
+                android:id="@+id/btn_to_online_payment"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="通知公告"
+                android:id="@+id/btn_to_notification_announcement"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="车辆管理"
+                android:id="@+id/btn_to_car_management"/>
+
+</LinearLayout>

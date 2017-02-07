@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+            android:gravity="center"
+              android:background="@color/white"
+            android:layout_margin="10dp">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+        <ImageView
+                android:id="@+id/iv_brand_icon_list_item"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/micro_fruit"
+                android:layout_centerVertical="true"/>
+        <LinearLayout
+                android:layout_toRightOf="@id/iv_brand_icon_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+                <TextView
+                        android:id="@+id/tv_brand_name_list_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unknown_brand"
+                        android:textColor="@color/black"/>
+                <TextView
+                        android:id="@+id/tv_car_plate_no_list_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unknown_plate_no"
+                        android:textColor="@color/black"/>
+                <TextView
+                        android:id="@+id/tv_review_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reviewing"
+                        android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/iv_delete_list_item"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/delete_enabled"
+                android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_9" />
+
+    <TextView
+            android:id="@+id/tv_recharge_for_car_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/recharge_for_car"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    <TextView
+            android:id="@+id/tv_query_car_record_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/query_record_of_car"
+            android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
