@@ -22,8 +22,6 @@ import org.json.JSONObject;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static android.R.attr.width;
-
 /**
  * Created by Administrator on 2016/8/1.
  */
@@ -55,10 +53,10 @@ public class RegisterActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register);
-        initStatusBar();
+        setContentView(R.layout.activity_register);
 
         findViews();
+        initStatusBar();
         addListeners();
         getScreenWidth();
         setBackground();
@@ -139,16 +137,16 @@ public class RegisterActivity extends Activity {
     }
 
     private void findViews() {
-        rlTitleBar = (RelativeLayout) findViewById(R.id.rl_title_bar_register);
-        ivBack = (ImageView) findViewById(R.id.iv_back_register);
-        ivBg = (ImageView) findViewById(R.id.iv_register_bg);
-        etUsername = (EditText) findViewById(R.id.et_username_register);
-        etPassword = (EditText) findViewById(R.id.et_password_register);
-        etConfirmPassword = (EditText) findViewById(R.id.et_confirm_password_register);
-        etPhone = (EditText) findViewById(R.id.et_phone_register);
-        etCode = (EditText) findViewById(R.id.et_code_register);
-        tvGetCode = (TextView) findViewById(R.id.tv_retrieve_code);
-        btnRegister = (Button) findViewById(R.id.btn_register_register);
+        rlTitleBar = (RelativeLayout) findViewById(R.id.rl_title_bar_activity_register);
+        ivBack = (ImageView) findViewById(R.id.iv_back_activity_register);
+        ivBg = (ImageView) findViewById(R.id.iv_register_bg_activity_register);
+        etUsername = (EditText) findViewById(R.id.et_username_activity_register);
+        etPassword = (EditText) findViewById(R.id.et_password_activity_register);
+        etConfirmPassword = (EditText) findViewById(R.id.et_confirm_password_activity_register);
+        etPhone = (EditText) findViewById(R.id.et_phone_activity_register);
+        etCode = (EditText) findViewById(R.id.et_code_activity_register);
+        tvGetCode = (TextView) findViewById(R.id.tv_retrieve_code_activity_register);
+        btnRegister = (Button) findViewById(R.id.btn_register_activity_register);
     }
 
     class MyTask extends AsyncTask<Void, Void, String> {

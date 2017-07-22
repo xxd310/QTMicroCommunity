@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
     <FrameLayout
-            android:id="@+id/content"
+            android:id="@+id/content_activity_main"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="91"
@@ -21,76 +21,76 @@
             android:paddingTop="4dp"
             android:background="#FFFFFF">
             <LinearLayout
-                    android:id="@+id/ll_home_page"
+                    android:id="@+id/ll_home_page_activity_main"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
                 <ImageView
-                        android:id="@+id/iv_home_page"
+                        android:id="@+id/iv_home_page_activity_main"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:src="@drawable/home_page_selected" />
                 <TextView
-                        android:id="@+id/tv_home_page"
+                        android:id="@+id/tv_home_page_activity_main"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/home_page"
                         android:textColor="@color/bottom_menu_text_color" />
             </LinearLayout>
             <LinearLayout
-                    android:id="@+id/ll_fresh_news"
+                    android:id="@+id/ll_fresh_news_activity_main"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
                 <ImageView
-                        android:id="@+id/iv_fresh_news"
+                        android:id="@+id/iv_fresh_news_activity_main"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:src="@drawable/fresh_news_unselected" />
                 <TextView
-                        android:id="@+id/tv_fresh_news"
+                        android:id="@+id/tv_fresh_news_activity_main"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/fresh_news"
                         android:textColor="@color/bottom_menu_text_color" />
             </LinearLayout>
             <LinearLayout
-                    android:id="@+id/ll_service"
+                    android:id="@+id/ll_activity_activity_main"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
                 <ImageView
-                        android:id="@+id/iv_service"
+                        android:id="@+id/iv_activity_activity_main"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/service_unselected" />
+                        android:src="@drawable/activity_unselected" />
                 <TextView
-                        android:id="@+id/tv_service"
+                        android:id="@+id/tv_activity_activity_main"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/service"
+                        android:text="@string/activity"
                         android:textColor="@color/bottom_menu_text_color" />
             </LinearLayout>
             <LinearLayout
-                    android:id="@+id/ll_personal_center"
+                    android:id="@+id/ll_personal_center_activity_main"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
                 <ImageView
-                        android:id="@+id/iv_personal_center"
+                        android:id="@+id/iv_personal_center_activity_main"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:src="@drawable/personal_center_unselected" />
                 <TextView
-                        android:id="@+id/tv_personal_center"
+                        android:id="@+id/tv_personal_center_activity_main"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/personal_center"

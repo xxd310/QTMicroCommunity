@@ -26,7 +26,7 @@ public class FreshNewsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.fresh_news, container, false);
+        rootView = inflater.inflate(R.layout.fragment_fresh_news, container, false);
         findViews();
         initTitleBar();
         addListeners();
@@ -37,6 +37,9 @@ public class FreshNewsFragment extends Fragment {
         ivTopFreshNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FreshNewsDetailActivity.class);
+                intent.putExtra("url", "https://mp.weixin.qq.com/s?__biz=MjM5NDc2MTQzNQ==&amp;mid=2649926116&amp;idx=1&amp;sn=c3a3134fe50420213269aac21612368d&amp;scene=0#wechat_redirect");
+                startActivity(intent);
             }
         });
         ivInterestTribe.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +50,9 @@ public class FreshNewsFragment extends Fragment {
         ivSxLibrary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FreshNewsDetailActivity.class);
+                intent.putExtra("url", "https://mp.weixin.qq.com/s?__biz=MjM5NDc2MTQzNQ==&amp;mid=2649926116&amp;idx=1&amp;sn=c3a3134fe50420213269aac21612368d&amp;scene=0#wechat_redirect");
+                startActivity(intent);
             }
         });
         ivQtTeaLeaf.setOnClickListener(new View.OnClickListener() {
@@ -57,11 +63,11 @@ public class FreshNewsFragment extends Fragment {
     }
 
     private void findViews() {
-        rlTitleBar = (RelativeLayout) rootView.findViewById(R.id.rl_title_bar_fresh_news);
-        ivTopFreshNews = (ImageView) rootView.findViewById(R.id.iv_top_fresh_news);
-        ivInterestTribe = (ImageView) rootView.findViewById(R.id.iv_interest_tribe_fresh_news);
-        ivSxLibrary = (ImageView) rootView.findViewById(R.id.iv_sx_library_fresh_news);
-        ivQtTeaLeaf = (ImageView) rootView.findViewById(R.id.iv_qt_tea_leaf_fresh_news);
+        rlTitleBar = (RelativeLayout) rootView.findViewById(R.id.rl_title_bar_fragment_fresh_news);
+        ivTopFreshNews = (ImageView) rootView.findViewById(R.id.iv_top_fragment_fresh_news);
+        ivInterestTribe = (ImageView) rootView.findViewById(R.id.iv_interest_tribe_fragment_fresh_news);
+        ivSxLibrary = (ImageView) rootView.findViewById(R.id.iv_sx_library_fragment_fresh_news);
+        ivQtTeaLeaf = (ImageView) rootView.findViewById(R.id.iv_qt_tea_leaf_fragment_fresh_news);
     }
 
     private void initTitleBar() {

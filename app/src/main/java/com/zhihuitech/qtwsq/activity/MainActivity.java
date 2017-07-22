@@ -15,7 +15,7 @@ import android.widget.*;
 import com.zhihuitech.qtwsq.fragment.FreshNewsFragment;
 import com.zhihuitech.qtwsq.fragment.HomePageFragment;
 import com.zhihuitech.qtwsq.fragment.PersonalCenterFragment;
-import com.zhihuitech.qtwsq.fragment.ServiceFragment;
+import com.zhihuitech.qtwsq.fragment.ActivityFragment;
 import com.zhihuitech.qtwsq.util.CustomViewUtil;
 
 /**
@@ -25,23 +25,23 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     // 定义4个Fragment对象
     private HomePageFragment homePageFragment;
     private FreshNewsFragment freshNewsFragment;
-    private ServiceFragment serviceFragment;
+    private ActivityFragment activityFragment;
     private PersonalCenterFragment personalCenterFragment;
 
     // 定义每个选项中的相关控件
     private LinearLayout llHomePage;
     private LinearLayout llFreshNews;
-    private LinearLayout llService;
+    private LinearLayout llActivity;
     private LinearLayout llPersonalCenter;
 
     private ImageView ivHomePage;
     private ImageView ivFreshNews;
-    private ImageView ivService;
+    private ImageView ivActivity;
     private ImageView ivPersonalCenter;
 
     private TextView tvHomePage;
     private TextView tvFreshNews;
-    private TextView tvService;
+    private TextView tvActivity;
     private TextView tvPersonalCenter;
 
     // 定义FragmentManager对象管理器
@@ -52,7 +52,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_main);
         initStatusBar();
 
         fragmentManager = getSupportFragmentManager();
@@ -71,42 +71,42 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
     private void findViews() {
         // 初始化底部导航栏的控件
-        ivHomePage = (ImageView) findViewById(R.id.iv_home_page);
-        ivFreshNews = (ImageView) findViewById(R.id.iv_fresh_news);
-        ivService = (ImageView) findViewById(R.id.iv_service);
-        ivPersonalCenter = (ImageView) findViewById(R.id.iv_personal_center);
+        ivHomePage = (ImageView) findViewById(R.id.iv_home_page_activity_main);
+        ivFreshNews = (ImageView) findViewById(R.id.iv_fresh_news_activity_main);
+        ivActivity = (ImageView) findViewById(R.id.iv_activity_activity_main);
+        ivPersonalCenter = (ImageView) findViewById(R.id.iv_personal_center_activity_main);
 
-        tvHomePage = (TextView) findViewById(R.id.tv_home_page);
-        tvFreshNews = (TextView) findViewById(R.id.tv_fresh_news);
-        tvService = (TextView) findViewById(R.id.tv_service);
-        tvPersonalCenter = (TextView) findViewById(R.id.tv_personal_center);
+        tvHomePage = (TextView) findViewById(R.id.tv_home_page_activity_main);
+        tvFreshNews = (TextView) findViewById(R.id.tv_fresh_news_activity_main);
+        tvActivity = (TextView) findViewById(R.id.tv_activity_activity_main);
+        tvPersonalCenter = (TextView) findViewById(R.id.tv_personal_center_activity_main);
 
-        llHomePage = (LinearLayout) findViewById(R.id.ll_home_page);
-        llFreshNews = (LinearLayout) findViewById(R.id.ll_fresh_news);
-        llService = (LinearLayout) findViewById(R.id.ll_service);
-        llPersonalCenter = (LinearLayout) findViewById(R.id.ll_personal_center);
+        llHomePage = (LinearLayout) findViewById(R.id.ll_home_page_activity_main);
+        llFreshNews = (LinearLayout) findViewById(R.id.ll_fresh_news_activity_main);
+        llActivity = (LinearLayout) findViewById(R.id.ll_activity_activity_main);
+        llPersonalCenter = (LinearLayout) findViewById(R.id.ll_personal_center_activity_main);
     }
 
     private void addListeners() {
         llHomePage.setOnClickListener(MainActivity.this);
         llFreshNews.setOnClickListener(MainActivity.this);
-        llService.setOnClickListener(MainActivity.this);
+        llActivity.setOnClickListener(MainActivity.this);
         llPersonalCenter.setOnClickListener(MainActivity.this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.ll_home_page:
+            case R.id.ll_home_page_activity_main:
                 setChoiceItem(0);
                 break;
-            case R.id.ll_fresh_news:
+            case R.id.ll_fresh_news_activity_main:
                 setChoiceItem(1);
                 break;
-            case R.id.ll_service:
+            case R.id.ll_activity_activity_main:
                 setChoiceItem(2);
                 break;
-            case R.id.ll_personal_center:
+            case R.id.ll_personal_center_activity_main:
                 setChoiceItem(3);
                 break;
             default:
@@ -123,7 +123,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private void setChoiceItem(int index) {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         // 清空, 重置选项, 隐藏所有Fragment
-        clearChioce();
+        clearChoice();
         hideFragments(fragmentTransaction);
         switch (index) {
             case 0:
@@ -132,7 +132,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 // 如果homePageFragment为空，则创建一个并添加到界面上
                 if (homePageFragment == null) {
                     homePageFragment = new HomePageFragment();
-                    fragmentTransaction.add(R.id.content, homePageFragment);
+                    fragmentTransaction.add(R.id.content_activity_main, homePageFragment);
                 } else {
                     fragmentTransaction.show(homePageFragment);
                 }
@@ -143,19 +143,19 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
                 if (freshNewsFragment == null) {
                     freshNewsFragment = new FreshNewsFragment();
-                    fragmentTransaction.add(R.id.content, freshNewsFragment);
+                    fragmentTransaction.add(R.id.content_activity_main, freshNewsFragment);
                 } else {
                     fragmentTransaction.show(freshNewsFragment);
                 }
                 break;
             case 2:
-                ivService.setImageResource(R.drawable.service_selected);
-                tvService.setTextColor(getResources().getColor(R.color.title_bar_bg));
-                if (serviceFragment == null) {
-                    serviceFragment = new ServiceFragment();
-                    fragmentTransaction.add(R.id.content, serviceFragment);
+                ivActivity.setImageResource(R.drawable.activity_selected);
+                tvActivity.setTextColor(getResources().getColor(R.color.title_bar_bg));
+                if (activityFragment == null) {
+                    activityFragment = new ActivityFragment();
+                    fragmentTransaction.add(R.id.content_activity_main, activityFragment);
                 } else {
-                    fragmentTransaction.show(serviceFragment);
+                    fragmentTransaction.show(activityFragment);
                 }
                 break;
             case 3:
@@ -163,7 +163,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 tvPersonalCenter.setTextColor(getResources().getColor(R.color.title_bar_bg));
                 if (personalCenterFragment == null) {
                     personalCenterFragment = new PersonalCenterFragment();
-                    fragmentTransaction.add(R.id.content, personalCenterFragment);
+                    fragmentTransaction.add(R.id.content_activity_main, personalCenterFragment);
                 } else {
                     fragmentTransaction.show(personalCenterFragment);
                 }
@@ -175,7 +175,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     /**
      * 当选中其中一个选项卡时，其他选项卡重置为默认
      */
-    private void clearChioce() {
+    private void clearChoice() {
         ivHomePage.setImageResource(R.drawable.home_page_unselected);
         tvHomePage.setTextColor(Color.LTGRAY);
         llHomePage.setBackgroundColor(Color.WHITE);
@@ -184,9 +184,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         tvFreshNews.setTextColor(Color.LTGRAY);
         llFreshNews.setBackgroundColor(Color.WHITE);
 
-        ivService.setImageResource(R.drawable.service_unselected);
-        tvService.setTextColor(Color.LTGRAY);
-        llService.setBackgroundColor(Color.WHITE);
+        ivActivity.setImageResource(R.drawable.activity_unselected);
+        tvActivity.setTextColor(Color.LTGRAY);
+        llActivity.setBackgroundColor(Color.WHITE);
 
         ivPersonalCenter.setImageResource(R.drawable.personal_center_unselected);
         tvPersonalCenter.setTextColor(Color.LTGRAY);
@@ -207,8 +207,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             fragmentTransaction.hide(freshNewsFragment);
         }
 
-        if (serviceFragment != null) {
-            fragmentTransaction.hide(serviceFragment);
+        if (activityFragment != null) {
+            fragmentTransaction.hide(activityFragment);
         }
 
         if (personalCenterFragment != null) {

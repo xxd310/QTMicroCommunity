@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <RelativeLayout
-            android:id="@+id/rl_title_bar_service"
+            android:id="@+id/rl_title_bar_fragment_activity"
             android:background="@color/title_bar_bg"
             android:gravity="center_vertical"
             android:layout_width="match_parent"
@@ -15,7 +15,7 @@
 
 
         <TextView
-                android:text="服务"
+                android:text="@string/activity"
                 android:layout_width="wrap_content"
                 android:layout_centerInParent="true"
                 android:textColor="@color/white"
@@ -29,6 +29,9 @@
             android:layout_height="0dp"
             android:layout_weight="80"
             android:orientation="vertical">
-
+        <ListView
+                android:id="@+id/lv_fragment_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
     </LinearLayout>
 </LinearLayout>

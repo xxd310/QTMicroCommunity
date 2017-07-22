@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <RelativeLayout
-            android:id="@+id/rl_title_bar_fresh_news"
+            android:id="@+id/rl_title_bar_fragment_fresh_news"
             android:background="@color/title_bar_bg"
             android:gravity="center_vertical"
             android:layout_width="match_parent"
@@ -15,7 +15,7 @@
 
 
         <TextView
-                android:text="新鲜事"
+                android:text="@string/fresh_news"
                 android:layout_width="wrap_content"
                 android:layout_centerInParent="true"
                 android:textColor="@color/white"
@@ -34,7 +34,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
             <ImageView
-                    android:id="@+id/iv_top_fresh_news"
+                    android:id="@+id/iv_top_fragment_fresh_news"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/sx_library_bg"
@@ -61,21 +61,21 @@
                 android:orientation="vertical"
                  android:padding="10dp">
             <ImageView
-                    android:id="@+id/iv_interest_tribe_fresh_news"
+                    android:id="@+id/iv_interest_tribe_fragment_fresh_news"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:src="@drawable/interest_tribe"
                     android:scaleType="fitXY"
                     android:layout_marginBottom="10dp"/>
             <ImageView
-                    android:id="@+id/iv_sx_library_fresh_news"
+                    android:id="@+id/iv_sx_library_fragment_fresh_news"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:src="@drawable/sx_library"
                     android:scaleType="fitXY"
                     android:layout_marginBottom="10dp"/>
             <ImageView
-                    android:id="@+id/iv_qt_tea_leaf_fresh_news"
+                    android:id="@+id/iv_qt_tea_leaf_fragment_fresh_news"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:src="@drawable/qt_tea_leaf"

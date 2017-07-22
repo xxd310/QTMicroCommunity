@@ -13,7 +13,7 @@
             android:layout_height="0dp"
             android:layout_weight="10">
         <ImageView
-                android:id="@+id/iv_back_validate_phone"
+                android:id="@+id/iv_back_activity_validate_phone"
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:src="@drawable/back"
@@ -22,7 +22,7 @@
                 android:layout_centerVertical="true"/>
 
         <TextView
-                android:id="@+id/tv_title_validate_phone"
+                android:id="@+id/tv_title_activity_validate_phone"
                 android:text="@string/forget_password"
                 android:layout_width="wrap_content"
                 android:layout_centerInParent="true"
@@ -51,7 +51,7 @@
                     android:textSize="16sp"/>
 
             <EditText
-                    android:id="@+id/et_tel_validate_phone"
+                    android:id="@+id/et_tel_activity_validate_phone"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -74,7 +74,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
             <EditText
-                    android:id="@+id/et_code_validate_phone"
+                    android:id="@+id/et_code_activity_validate_phone"
                     android:layout_width="0dp"
                     android:layout_weight="4"
                     android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                     android:inputType="number"
                     android:layout_marginRight="5dp"/>
             <TextView
-                    android:id="@+id/tv_get_code_validate_phone"
+                    android:id="@+id/tv_get_code_activity_validate_phone"
                     android:layout_width="0dp"
                     android:layout_weight="4"
                     android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
         </LinearLayout>
 
         <Button
-                android:id="@+id/btn_next_step_validate_phone"
+                android:id="@+id/btn_next_step_activity_validate_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="下一步"

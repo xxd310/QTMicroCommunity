@@ -13,14 +13,14 @@ import com.zhihuitech.qtwsq.util.SystemBarTintManager;
 /**
  * Created by Administrator on 2016/7/30.
  */
-public class ServiceFragment extends Fragment {
+public class ActivityFragment extends Fragment {
 
     private RelativeLayout rlTitleBar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.service, container, false);
-        rlTitleBar = (RelativeLayout) view.findViewById(R.id.rl_title_bar_service);
+        View view = inflater.inflate(R.layout.fragment_activity, container, false);
+        rlTitleBar = (RelativeLayout) view.findViewById(R.id.rl_title_bar_fragment_activity);
         initTitleBar();
         return view;
     }

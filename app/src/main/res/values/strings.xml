@@ -43,9 +43,9 @@
     <string name="null_password_tip">密码不能为空！</string>
     <string name="wrong_password_length_tip">密码长度不符合要求！</string>
     <!-- 主界面 -->
-    <string name="home_page">首页</string>
+    <string name="home_page">主页</string>
     <string name="fresh_news">新鲜事</string>
-    <string name="service">服务</string>
+    <string name="activity">活动</string>
     <string name="personal_center">个人中心</string>
     <!-- 首页 -->
     <string name="most_beautiful_photo">最美照片</string>

@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -38,7 +37,7 @@ public class ResetPasswordActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.reset_password);
+        setContentView(R.layout.activity_reset_password);
         myApp = (MyApplication) getApplication();
 
         initStatusBar();
@@ -83,11 +82,11 @@ public class ResetPasswordActivity extends Activity {
     }
 
     private void findViews() {
-        ivBack = (ImageView) findViewById(R.id.iv_back_reset_password);
-        tvTitle = (TextView) findViewById(R.id.tv_title_reset_password);
-        etNewPassword = (EditText) findViewById(R.id.et_new_password_reset_password);
-        etConfirmPassword = (EditText) findViewById(R.id.et_confirm_password_reset_password);
-        btnSubmit = (Button) findViewById(R.id.btn_submit_reset_password);
+        ivBack = (ImageView) findViewById(R.id.iv_back_activity_reset_password);
+        tvTitle = (TextView) findViewById(R.id.tv_title_activity_reset_password);
+        etNewPassword = (EditText) findViewById(R.id.et_new_password_activity_reset_password);
+        etConfirmPassword = (EditText) findViewById(R.id.et_confirm_password_activity_reset_password);
+        btnSubmit = (Button) findViewById(R.id.btn_submit_activity_reset_password);
     }
 
     private void initStatusBar() {

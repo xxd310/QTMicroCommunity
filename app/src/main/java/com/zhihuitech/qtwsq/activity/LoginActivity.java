@@ -1,14 +1,11 @@
 package com.zhihuitech.qtwsq.activity;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -17,19 +14,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.zhihuitech.qtwsq.entity.DropDownItem;
 import com.zhihuitech.qtwsq.entity.User;
 import com.zhihuitech.qtwsq.provider.DataProvider;
 import com.zhihuitech.qtwsq.util.CustomViewUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.List;
-
-import static android.R.attr.data;
-import static com.zhihuitech.qtwsq.activity.R.string.username;
-import static com.zhihuitech.qtwsq.util.Constant.LOGIN;
-import static com.zhihuitech.qtwsq.util.Constant.SET_PASSWORD;
 
 /**
  * Created by Administrator on 2016/7/30.
@@ -53,7 +42,7 @@ public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_login);
         myApp = (MyApplication) this.getApplication();
         // 沉浸式状态栏
         initStatusBar();
@@ -146,12 +135,12 @@ public class LoginActivity extends Activity {
     }
 
     private void findViews() {
-        btnLogin = (Button) findViewById(R.id.btn_login_login);
-        btnRegister = (Button) findViewById(R.id.btn_register_login);
-        tvForgetPassword = (TextView) findViewById(R.id.tv_forget_password_login);
-        etUsername = (EditText) findViewById(R.id.et_username_login);
-        etPassword = (EditText) findViewById(R.id.et_password_login);
-        cbAutoLogin = (CheckBox) findViewById(R.id.cb_auto_login_login);
+        btnLogin = (Button) findViewById(R.id.btn_login_activity_login);
+        btnRegister = (Button) findViewById(R.id.btn_register_activity_login);
+        tvForgetPassword = (TextView) findViewById(R.id.tv_forget_password_activity_login);
+        etUsername = (EditText) findViewById(R.id.et_username_activity_login);
+        etPassword = (EditText) findViewById(R.id.et_password_activity_login);
+        cbAutoLogin = (CheckBox) findViewById(R.id.cb_auto_login_activity_login);
     }
 
     class MyTask extends AsyncTask<Void, Void, String> {

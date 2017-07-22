@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.*;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -46,7 +45,7 @@ public class ValidatePhoneActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.validate_phone);
+        setContentView(R.layout.activity_validate_phone);
         myApp = (MyApplication) getApplication();
 
         initStatusBar();
@@ -134,12 +133,12 @@ public class ValidatePhoneActivity extends Activity {
     }
 
     private void findViews() {
-        ivBack = (ImageView) findViewById(R.id.iv_back_validate_phone);
-        tvTitle = (TextView) findViewById(R.id.tv_title_validate_phone);
-        etTel = (EditText) findViewById(R.id.et_tel_validate_phone);
-        etCode = (EditText) findViewById(R.id.et_code_validate_phone);
-        btnNextStep = (Button) findViewById(R.id.btn_next_step_validate_phone);
-        tvGetCode = (TextView) findViewById(R.id.tv_get_code_validate_phone);
+        ivBack = (ImageView) findViewById(R.id.iv_back_activity_validate_phone);
+        tvTitle = (TextView) findViewById(R.id.tv_title_activity_validate_phone);
+        etTel = (EditText) findViewById(R.id.et_tel_activity_validate_phone);
+        etCode = (EditText) findViewById(R.id.et_code_activity_validate_phone);
+        btnNextStep = (Button) findViewById(R.id.btn_next_step_activity_validate_phone);
+        tvGetCode = (TextView) findViewById(R.id.tv_get_code_activity_validate_phone);
     }
 
     private void initStatusBar() {
