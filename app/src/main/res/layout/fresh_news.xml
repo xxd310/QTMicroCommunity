@@ -29,6 +29,57 @@
             android:layout_height="0dp"
             android:layout_weight="80"
             android:orientation="vertical">
-
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            <ImageView
+                    android:id="@+id/iv_top_fresh_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sx_library_bg"
+                    android:scaleType="fitXY"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#80000000"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_alignParentBottom="true">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上线预告"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                 android:padding="10dp">
+            <ImageView
+                    android:id="@+id/iv_interest_tribe_fresh_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/interest_tribe"
+                    android:scaleType="fitXY"
+                    android:layout_marginBottom="10dp"/>
+            <ImageView
+                    android:id="@+id/iv_sx_library_fresh_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sx_library"
+                    android:scaleType="fitXY"
+                    android:layout_marginBottom="10dp"/>
+            <ImageView
+                    android:id="@+id/iv_qt_tea_leaf_fresh_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/qt_tea_leaf"
+                    android:scaleType="fitXY"/>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

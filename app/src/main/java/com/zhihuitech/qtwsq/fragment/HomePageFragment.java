@@ -63,6 +63,7 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
     private TextView tvWeather;
     private ImageView ivWeatherIcon;
 
+    private LinearLayout llMostBeautifulPhoto;
     private LinearLayout llMicroFruit;
     private LinearLayout llRepair;
     private LinearLayout llCarManagement;
@@ -72,6 +73,7 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
     private LinearLayout llExpress;
     private LinearLayout llContactProperty;
 
+    private ImageView ivMostBeautifulPhoto;
     private ImageView ivMicroFruit;
     private ImageView ivRepair;
     private ImageView ivCarManagement;
@@ -173,6 +175,7 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
         tvUserType.setText(myApp.getUser().getType().equals("1") ? "成员" : (myApp.getUser().getType().equals("2") ? "业主" : (myApp.getUser().getType().equals("3")) ? "租客" : "未知"));
         tvUserName.setText(myApp.getUser().getRealname());
         String isVerify = myApp.getUser().getIsverify();
+        ivMostBeautifulPhoto.setImageResource(isVerify.equals("1") ? R.drawable.most_beautiful_photo : R.drawable.most_beautiful_photo_disabled);
         ivMicroFruit.setImageResource(isVerify.equals("1") ? R.drawable.micro_fruit : R.drawable.micro_fruit_disabled);
         ivRepair.setImageResource(isVerify.equals("1") ? R.drawable.need_repair : R.drawable.need_repair_disabled);
         ivCarManagement.setImageResource(isVerify.equals("1") ? R.drawable.car_management : R.drawable.car_management_disabled);
@@ -180,6 +183,7 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
         ivLifeService.setImageResource(isVerify.equals("1") ? R.drawable.life_service : R.drawable.life_service_disabled);
         ivNotice.setImageResource(isVerify.equals("1") ? R.drawable.notice : R.drawable.notice_disabled);
         ivContactProperty.setImageResource(isVerify.equals("1") ? R.drawable.contact_property : R.drawable.contact_property_disabled);
+        llMostBeautifulPhoto.setClickable(isVerify.equals("1") ? true : false);
         llMicroFruit.setClickable(isVerify.equals("1") ? true : false);
         llRepair.setClickable(isVerify.equals("1") ? true : false);
         llCarManagement.setClickable(isVerify.equals("1") ? true : false);
@@ -415,6 +419,7 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
         tvTemperature = (TextView) view.findViewById(R.id.tv_temperature_home_page);
         tvWeather = (TextView) view.findViewById(R.id.tv_weather_home_page);
         ivWeatherIcon = (ImageView) view.findViewById(R.id.iv_weather_icon);
+        llMostBeautifulPhoto = (LinearLayout) view.findViewById(R.id.ll_most_beautiful_photo_home_page);
         llMicroFruit = (LinearLayout) view.findViewById(R.id.ll_micro_fruit_home_page);
         llRepair = (LinearLayout) view.findViewById(R.id.ll_need_repair_home_page);
         llCarManagement = (LinearLayout) view.findViewById(R.id.ll_car_management_home_page);
@@ -423,6 +428,7 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
         llNotice = (LinearLayout) view.findViewById(R.id.ll_notice_home_page);
         llExpress = (LinearLayout) view.findViewById(R.id.ll_express_home_page);
         llContactProperty = (LinearLayout) view.findViewById(R.id.ll_contact_property_home_page);
+        ivMostBeautifulPhoto = (ImageView) view.findViewById(R.id.iv_most_beautiful_photo_home_page);
         ivMicroFruit = (ImageView) view.findViewById(R.id.iv_micro_fruit_home_page);
         ivRepair = (ImageView) view.findViewById(R.id.iv_need_repair_home_page);
         ivCarManagement = (ImageView) view.findViewById(R.id.iv_car_management_home_page);
@@ -444,6 +450,7 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
 
     private void addListeners() {
         tvHousePropertyName.setOnClickListener(this);
+        llMostBeautifulPhoto.setOnClickListener(this);
         llMicroFruit.setOnClickListener(this);
         llRepair.setOnClickListener(this);
         llCarManagement.setOnClickListener(this);
@@ -529,6 +536,10 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.tv_house_property_name_home_page:
                 showHousePropertyNameList();
+                break;
+            case R.id.ll_most_beautiful_photo_home_page:
+                intent = new Intent(getActivity(), MostBeautifulPhotoActivity.class);
+                startActivity(intent);
                 break;
             case R.id.ll_micro_fruit_home_page:
                 CustomViewUtil.createToast(getActivity(), "暂无此功能");

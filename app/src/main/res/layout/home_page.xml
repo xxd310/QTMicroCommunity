@@ -161,7 +161,8 @@
                                 android:layout_weight="1"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
-                                android:gravity="center">
+                                android:gravity="center"
+                                android:visibility="gone">
                             <ImageView
                                     android:id="@+id/iv_micro_fruit_home_page"
                                     android:layout_width="45dp"
@@ -171,6 +172,24 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/micro_fruit"
+                                    android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:id="@+id/ll_most_beautiful_photo_home_page"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center">
+                            <ImageView
+                                    android:id="@+id/iv_most_beautiful_photo_home_page"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/most_beautiful_photo"/>
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/most_beautiful_photo"
                                     android:layout_marginTop="5dp"/>
                         </LinearLayout>
                         <LinearLayout
@@ -244,7 +263,7 @@
                                     android:id="@+id/iv_life_service_home_page"
                                     android:layout_width="45dp"
                                     android:layout_height="45dp"
-                                    android:src="@drawable/life_service_disabled"/>
+                                    android:src="@drawable/life_service"/>
                             <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
